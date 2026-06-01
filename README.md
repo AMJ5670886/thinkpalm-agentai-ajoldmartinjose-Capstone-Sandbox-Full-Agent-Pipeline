@@ -21,7 +21,7 @@ pip install -r requirements.txt
 copy .env.example .env          # Windows
 # cp .env.example .env          # macOS/Linux
 
-Edit .env and set GROQAI_API_KEY (sample is given in envexample).
+Edit .env and set GROQAI_API_KEY.
 
 cd web
 npm install
