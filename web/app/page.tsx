@@ -36,18 +36,8 @@ type PipelineResult = {
   error: string | null;
 };
 
-const SAMPLE_PRD = `Smart Building Energy Monitor
-
-Devices: temperature sensors, smart meters, occupancy sensors.
-
-KPIs: total power (kW), average zone temperature, daily cost.
-Charts: 24h temperature line chart, weekly energy bar chart.
-Alerts: high temperature warning, offline sensor banner.
-Tables: device list with status; alert event log.
-Controls: HVAC eco toggle, temperature setpoint slider.`;
-
 export default function Home() {
-  const [prd, setPrd] = useState(SAMPLE_PRD);
+  const [prd, setPrd] = useState("");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<PipelineResult | null>(null);
   const [memory, setMemory] = useState("");
