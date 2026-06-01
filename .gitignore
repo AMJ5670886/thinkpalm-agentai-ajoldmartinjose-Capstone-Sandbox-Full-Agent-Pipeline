@@ -1,0 +1,10 @@
+.venv/
+.env
+data/memory.json
+__pycache__/
+*.pyc
+output/
+generated/
+web/node_modules/
+web/.next/
+web/.env.local

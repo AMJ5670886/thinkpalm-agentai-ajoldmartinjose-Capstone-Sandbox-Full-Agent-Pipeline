@@ -1,0 +1,37 @@
+Smart Building Energy Monitor — Product Requirements
+
+Overview
+Deploy sensors across commercial buildings to track HVAC and electrical usage in real time.
+
+Devices
+- Temperature and humidity sensors (per zone)
+- Smart electricity meters on main panels
+- Occupancy sensors in meeting rooms
+- BACnet gateway for legacy HVAC controllers
+
+Dashboard Requirements
+
+KPIs
+- Current total power draw (kW)
+- Average zone temperature
+- Daily energy cost estimate
+- Occupancy rate (%)
+
+Charts
+- 24-hour line chart of temperature per zone
+- Weekly bar chart comparing energy use by floor
+- Trend area chart for humidity levels
+
+Alerts
+- Email and in-app alert when temperature exceeds 28°C for 15 minutes
+- Critical alarm when meter reading spikes 20% above baseline
+- Warning banner for offline sensors
+
+Tables
+- Sortable table of all devices with status, last seen, and firmware version
+- Event log table for alert history (last 7 days)
+
+Controls
+- Toggle HVAC eco mode per zone
+- Slider to set temperature setpoint (18–26°C)
+- Button to acknowledge all active alerts
