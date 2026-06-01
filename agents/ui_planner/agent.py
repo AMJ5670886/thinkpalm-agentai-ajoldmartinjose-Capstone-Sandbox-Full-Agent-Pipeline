@@ -22,10 +22,10 @@ class UIPlannerAgent:
         api_key: str | None = None,
         base_url: str | None = None,
     ) -> None:
-        self.model = model or os.getenv("OPENAI_MODEL", "gpt-4o-mini")
-        self._base_url = base_url or os.getenv("OPENAI_BASE_URL")
+        self.model = model or os.getenv("GROQ_MODEL", "gpt-4o-mini")
+        self._base_url = base_url or os.getenv("GROQ_BASE_URL")
         self._client = OpenAI(
-            api_key=api_key or os.getenv("OPENAI_API_KEY"),
+            api_key=api_key or os.getenv("GROQAI_API_KEY"),
             base_url=self._base_url,
         )
 

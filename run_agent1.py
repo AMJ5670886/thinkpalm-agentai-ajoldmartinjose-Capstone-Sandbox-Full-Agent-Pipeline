@@ -25,7 +25,7 @@ def main() -> int:
     )
     parser.add_argument(
         "--model",
-        help="Override OPENAI_MODEL (default: gpt-4o-mini)",
+        help="Override GROQ_MODEL (default: gpt-4o-mini)",
     )
     args = parser.parse_args()
 

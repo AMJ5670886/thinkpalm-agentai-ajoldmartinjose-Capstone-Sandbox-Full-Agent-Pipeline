@@ -31,7 +31,7 @@ def main() -> int:
         action="store_true",
         help="Do not write PRD/layout to memory (still reads preferences)",
     )
-    parser.add_argument("--model", help="Override OPENAI_MODEL")
+    parser.add_argument("--model", help="Override GROQ_MODEL")
     args = parser.parse_args()
 
     prd_path = Path(args.prd)

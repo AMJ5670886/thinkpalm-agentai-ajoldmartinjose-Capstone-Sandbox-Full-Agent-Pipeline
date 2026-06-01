@@ -27,7 +27,7 @@ T = TypeVar("T", bound=BaseModel)
 
 
 def _base_url(base_url: str | None) -> str:
-    return (base_url or os.getenv("OPENAI_BASE_URL") or "").lower()
+    return (base_url or os.getenv("GROQ_BASE_URL") or "").lower()
 
 
 def _is_groq(base_url: str | None) -> bool:

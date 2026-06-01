@@ -48,7 +48,7 @@ class PipelineOrchestrator:
     ) -> None:
         self.memory = MemoryStore(memory_path)
         self.model = model
-        self.mock = mock or not os.getenv("OPENAI_API_KEY")
+        self.mock = mock or not os.getenv("GROQAI_API_KEY")
 
     def run(self, prd_text: str, *, save_memory: bool = True) -> PipelineResult:
         result = PipelineResult(memory_display=self.memory.format_display())
